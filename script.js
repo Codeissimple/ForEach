@@ -16,8 +16,13 @@ const colors = ['teal', 'cyan', 'peach', 'purple'];
 function yell(val, i) {
     const caps = val.toUpperCase();
     console.log(`${val} At index ${i}`);
-
 }
 
+colors.forEach(yell);
 
-colors.forEach(yell)
+const prices = [30.99, 19.99, 2.50, 99.0];
+let total = 0;
+prices.forEach(function(price){
+    total += price;
+});
+console.log(total);
