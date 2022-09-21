@@ -19,10 +19,18 @@ function yell(val, i) {
 }
 
 colors.forEach(yell);
-
+/*
 const prices = [30.99, 19.99, 2.50, 99.0];
 let total = 0;
 prices.forEach(function(price){
     total += price;
 });
+console.log(total);
+*/
+
+const prices = [30.99, 19.99, 2.50, 99.0];
+let total = 0;
+for (let price of prices) {
+    total +=price;
+}
 console.log(total);
