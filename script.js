@@ -13,6 +13,11 @@ arr.forEach(function(value, index, array){
 
 const colors = ['teal', 'cyan', 'peach', 'purple'];
 
-colors.forEach(function(val) {
-    console.log(val.toUpperCase());
-});
+function yell(val, i) {
+    const caps = val.toUpperCase();
+    console.log(`${val} At index ${i}`);
+
+}
+
+
+colors.forEach(yell)
