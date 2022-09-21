@@ -13,4 +13,6 @@ arr.forEach(function(value, index, array){
 
 const colors = ['teal', 'cyan', 'peach', 'purple'];
 
-colors.forEach(console.log);
+colors.forEach(function(val) {
+    console.log(val.toUpperCase());
+});
