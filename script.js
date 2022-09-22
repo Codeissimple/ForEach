@@ -1,5 +1,6 @@
 
 simpleArray = [1,2,3,4,5,6,7,8,9];
+stringArray = ['hi', 'bye', 'hello', 'goodbye'];
 
 function doubleValues(arr) {
     let newArray = [];
@@ -23,9 +24,14 @@ function onlyEvenValues(arr) {
 
 console.log(onlyEvenValues(simpleArray));
 
-showFirstAndLast(arr) {
+stringArray = ['hi', 'bye', 'hello', 'goodbye'];
+function showFirstAndLast(arr) {
     let newArray = [];
-    arr.forEach(function(val) {
-        
-    })
-}
+    console.log('aye');
+    arr.forEach(function(str) {
+        newArray.push(str[0] + str[str.length - 1]);
+    });
+    return newArray;
+};
+
+console.log(showFirstAndLast(stringArray));
