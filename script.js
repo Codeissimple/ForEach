@@ -52,3 +52,23 @@ function addKeyAndValue(arr, key, value) {
 }
 
 addKeyAndValue(names, 'title', 'instructor');
+
+function vowelCount(str) {
+    let splitArr = str.split("");
+    let obj = {};
+    const vowels = "aeiou";
+  
+    splitArr.forEach(function(letter) {
+      let lowerCasedLetter = letter.toLowerCase()
+      if (vowels.indexOf(lowerCasedLetter) !== -1) {
+        if (obj[lowerCasedLetter]) {
+          obj[lowerCasedLetter]++;
+        } else {
+          obj[lowerCasedLetter] = 1;
+        }
+      }
+    });
+    return obj;
+  }
+
+  console.log(vowelCount(names));
