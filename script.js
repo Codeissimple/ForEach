@@ -35,3 +35,20 @@ function showFirstAndLast(arr) {
 };
 
 console.log(showFirstAndLast(stringArray));
+
+let names = [
+    {name: 'Elie'},
+    {name: 'Tim'},
+    {name: 'Matt'},
+    {name: 'Colt'}
+];
+
+function addKeyAndValue(arr, key, value) {
+    arr.forEach( Object => {
+        Object[key] = value;
+    });
+    console.log(arr);
+    return arr;
+}
+
+addKeyAndValue(names, 'title', 'instructor');
