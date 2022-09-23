@@ -53,6 +53,9 @@ function addKeyAndValue(arr, key, value) {
 
 addKeyAndValue(names, 'title', 'instructor');
 
+
+
+
 function vowelCount(str) {
     let splitArr = str.split("");
     let obj = {};
@@ -71,4 +74,24 @@ function vowelCount(str) {
     return obj;
   }
 
-  console.log(vowelCount(names));
+  console.log(vowelCount('Elie'));
+
+
+  //----------------->
+//      MAP
+  //----------------->
+
+  function doubleValuesWithMap(arr) {
+    return arr.map (function(val) {
+        return val * 2;
+    });
+  }
+
+  console.log(doubleValuesWithMap(simpleArray));
+
+  function valTimesIndex(arr) {
+    return arr.map(function(val, i) {
+        return val * arr[i];
+    });
+  }
+  console.log(valTimesIndex(simpleArray));
