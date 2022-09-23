@@ -111,3 +111,17 @@ function vowelCount(str) {
     ],
     'name'
   ));
+
+
+  function extractFullName(arr) {
+    return arr.map(function(val) {
+      return val.first + " " + val.last;
+    });
+  }
+
+  console.log(extractFullName([
+    {first: 'Elie', last:"Schoppik"},
+    {first: 'Tim', last:"Garcia"},
+    {first: 'Matt', last:"Lane"},
+    {first: 'Colt', last:"Steele"}
+  ]));
