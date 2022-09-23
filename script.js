@@ -95,3 +95,19 @@ function vowelCount(str) {
     });
   }
   console.log(valTimesIndex(simpleArray));
+
+  function extractKey(arr, key) {
+    return arr.map(function(val) {
+        return val[key];
+    });
+  }
+
+  console.log(extractKey(
+    [
+      {name: 'Elie'},
+      {name: 'Tim'},
+      {name: 'Matt'},
+      {name: 'Colt'}
+    ],
+    'name'
+  ));
