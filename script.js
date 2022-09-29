@@ -144,7 +144,7 @@ function vowelCount(str) {
     'isCatOwner'
     ));
 
-*/
+
 
 function find(arr, num) {
   return arr.filter(function(val){
@@ -154,3 +154,21 @@ function find(arr, num) {
 
 console.log(find([1,2,3,4,5], 3));
 console.log(find([1,2,3,4,5], 10));
+*/
+
+function findInObj(arr, key, val) {
+  return arr.filter(function(val){
+    return val[key] !== undefined;
+  });
+};
+
+console.log(findInObj(
+  [
+    {first: 'Elie', last:"Schoppik"},
+    {first: 'Tim', last:"Garcia", isCatOwner: true},
+    {first: 'att', last:"Lane"},
+    {first: 'Colt', last:"Steele", isCatOwner: true}
+  ],
+  'isCatOwner',
+  true
+));
