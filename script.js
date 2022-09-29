@@ -154,7 +154,7 @@ function find(arr, num) {
 
 console.log(find([1,2,3,4,5], 3));
 console.log(find([1,2,3,4,5], 10));
-*/
+
 
 function findInObj(arr, key, val) {
   return arr.filter(function(val){
@@ -172,3 +172,10 @@ console.log(findInObj(
   'isCatOwner',
   true
 ));
+
+*/
+function removeVowels(string) {
+  string.split('a', 'e').join('');
+};
+
+console.log()
