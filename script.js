@@ -174,14 +174,21 @@ console.log(findInObj(
 ));
 
 */
-function removeVowels(string) {
+function removeVowels(str) {
   let vowels = 'aieuo';
-  let myString = str.toLowerCase().split('');
-  let newArray = myString.filter(function(letter){
+  let inString = str.toLowerCase().split('');
+  let newArray = inString.filter(function(letter){
     if(vowels.indexOf(letter) == -1){
       return letter;
     }
-  })
-};
+  });
+    let myString = "";
+    newArray.forEach(function(char) {
+      myString += char;
+    });
+    return myString;
+  }; 
 
 console.log(removeVowels('Elie'));
+console.log(removeVowels('TIM'));
+console.log(removeVowels('kcnfenfocwmseaaiiuoo'));
