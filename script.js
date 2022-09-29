@@ -173,7 +173,7 @@ console.log(findInObj(
   true
 ));
 
-*/
+
 function removeVowels(str) {
   let vowels = 'aieuo';
   let inString = str.toLowerCase().split('');
@@ -192,3 +192,18 @@ function removeVowels(str) {
 console.log(removeVowels('Elie'));
 console.log(removeVowels('TIM'));
 console.log(removeVowels('kcnfenfocwmseaaiiuoo'));
+
+*/
+
+function doubleOddNumbers(arr) {
+  return arr
+    .filter(function(val) {
+      return val % 2 !== 0;
+    })
+    .map(function(val) {
+      return val * 2;
+    });
+  }
+
+  console.log(doubleOddNumbers([1,2,3,4,5]));
+  console.log(doubleOddNumbers([4,4,4,4,4]));
