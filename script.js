@@ -125,7 +125,7 @@ function vowelCount(str) {
     {first: 'Matt', last:"Lane"},
     {first: 'Colt', last:"Steele"}
   ]));
-*/
+
   function filterByValue(arr, cat) {
     return arr.filter(function(val){
       if (val[cat] !== undefined) {
@@ -144,3 +144,13 @@ function vowelCount(str) {
     'isCatOwner'
     ));
 
+*/
+
+function find(arr, num) {
+  return arr.filter(function(val){
+    return val === num;
+  });
+};
+
+console.log(find([1,2,3,4,5], 3));
+console.log(find([1,2,3,4,5], 10));
