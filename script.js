@@ -175,7 +175,13 @@ console.log(findInObj(
 
 */
 function removeVowels(string) {
-  string.split('a', 'e').join('');
+  let vowels = 'aieuo';
+  let myString = str.toLowerCase().split('');
+  let newArray = myString.filter(function(letter){
+    if(vowels.indexOf(letter) == -1){
+      return letter;
+    }
+  })
 };
 
-console.log()
+console.log(removeVowels('Elie'));
