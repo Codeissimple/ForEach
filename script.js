@@ -1,7 +1,7 @@
 
 simpleArray = [1,2,3,4,5,6,7,8,9];
 stringArray = ['hi', 'bye', 'hello', 'goodbye'];
-
+/*
 function doubleValues(arr) {
     let newArray = [];
     arr.forEach(function(val) {
@@ -125,3 +125,22 @@ function vowelCount(str) {
     {first: 'Matt', last:"Lane"},
     {first: 'Colt', last:"Steele"}
   ]));
+*/
+  function filterByValue(arr, cat) {
+    return arr.filter(function(val){
+      if (val[cat] !== undefined) {
+        return val;
+      }
+    });
+  };
+
+  console.log(filterByValue(
+    [
+      {first: 'Elie', last:"Schoppik"},
+      {first: 'Tim', last:"Garcia", isCatOwner: true},
+      {first: 'Matt', last:"Lane"},
+      {first: 'Colt', last:"Steele", isCatOwner: true}
+    ],
+    'isCatOwner'
+    ));
+
